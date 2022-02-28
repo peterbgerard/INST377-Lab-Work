@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+  }
+
+  .title {
+    background-color: rgba(0,139, 139, 1);
+    justify-content: space-around;
+  }
+
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .links {
+    border: 1px solid #fff;  /* For debugging */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .main-link {
+    margin-left: 20px;
+  }
+
+  .db-demos {
+    margin-left: auto;
+  }
+  
+  .menu {
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+  }
+   
+  .logo {
+    border: 1px solid #5995DA;
+  }
+  
+  .group-project,
+  .github {
+     align-self: flex-end;
+     margin-bottom: 20px;
+  }   
+
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    max-width: 300px;
+    position: relative;
+  }
+  
+  .carousel-item, 
+  .carousel-item-hidden {
+    display: none;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .carousel-item-visible {
+    display: block;
+  }
+
+  .carousel-button {
+    align-items: center;
+    display: inline-flex;
+  }
+
+  .carousel-button button#carousel-button-prev {
+    border: 0;
+    font-weight: bold;
+    background-color: orange;
+    cursor: pointer;
+    width: 60px;
+    height: 40px;
+  } 
+ 
+  .carousel-button button#carousel-button-next {
+    border: 0;
+    font-weight: bold;
+    background-color: orange;
+    cursor: pointer;
+    width: 60px;
+    height: 40px;
+  } 
+
+  .coming-soon {
+    font-size: x-large;
+    display: flex;
+    justify-content: center; 
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+
+  .footer-three {
+    flex: 2;
+  }
+
+  .footer-one,
+  .footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+  }
