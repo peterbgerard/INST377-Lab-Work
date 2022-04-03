@@ -61,6 +61,8 @@
     padding: 15px;
     border-radius: 4px;
     background-color: #efefef;
+    height: fit-content;
+    margin: 20px;
   }
   
   
