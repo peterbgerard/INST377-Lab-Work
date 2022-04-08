@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
+      ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+    background-color: darkslategray;
+    font-weight: 600;
+  }
+  
+  /* Page Layout */
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  
+  .columns form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .wrapper {
+    display: flex;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin-top: 25px;
+    min-height: 90vh;
+  }
+  
+  
+  .header {
+    display: block;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 15px;
+    align-items: center;
+    background-color: hsl(48, 100%, 67%);
+  }
+  
+  
+  .page_item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #efefef;
+  }
+  
+  
+  .form_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:5px;
+  }
