@@ -4,7 +4,7 @@
   <meta charset = "utf-8">
   <meta http-equiv = "X-UA-Compatible" content = "IE-edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lab 6 - Javacript 2: Browswer Events</title>
+  <title>Lab 7 - Filtering Data</title>
   <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel = "stylesheet" href = "./styles.css">
 </head>
@@ -12,16 +12,17 @@
 <body>
     <div class = "wrapper">
       <div class = "container">
-        <div class = "header"> PETER GERARD Lab 6 - JS Browser Events</div>
+        <div class = "header"> PETER GERARD Lab 7 - Filtering Data
+        </div>
         <div class = "columns">
           <div class = "page_item">
-            <form class = "main_form">
+            <form class = "main_form" id = "main_form">
               <div class = "page_item"></div>
             <!-- <form action = "/api/foodServicesPG" method = "get"> -->
-              <label for = "fname" > First Name </label>
-              <input type = "text" name = "fname" id = "fname">
-              <label for = "pref" > Food Preference</label>
-              <input type = "text" name = "pref" id = "pref">
+              <label for = "rest_name" >Restaurant Name</label>
+              <input type = "text" name = "rest_name" id = "rest_name" class="rest_name">
+              <label for = "food_pref" >Zip Code</label>
+              <input type = "text" name = "zip" id = "zip" class="zip">
               <div class = "form_item">
                 <label class="label"> Veggie or Vegan? </label>
                 <div class="control">
@@ -35,7 +36,7 @@
                     </label>
                   </div>
             </div>  
-            <button class = "button" type = "submit">Submit</button>
+            <button class = "button" type = "submit" id = "button">Load List</button>
             </form>
           </div>
           <div class = "page_item">
