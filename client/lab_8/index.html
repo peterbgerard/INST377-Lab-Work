@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+<head>
+  <meta charset = "utf-8">
+  <meta http-equiv = "X-UA-Compatible" content = "IE-edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PETER GERARD Lab 8 - Maps and Map Markers</title>
+  <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel = "stylesheet" href = "./styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+</head>
+
+<body>
+    <div class = "wrapper">
+      <div class = "container">
+        <div class = "header"> PETER GERARD Lab 8 - Maps and Map Markers
+        </div>
+        <div class = "columns">
+          <div class = "page_item">
+            <form class = "main_form" id = "main_form">
+              <div class = "page_item"></div>
+            <!-- <form action = "/api/foodServicesPG" method = "get"> -->
+              <label for = "rest_name" >Restaurant Name</label>
+              <input type = "text" name = "rest_name" id = "rest_name" class="rest_name">
+              <label for = "food_pref" >Zip Code</label>
+              <input type = "text" name = "zip" id = "zip" class="zip">
+              <div class = "form_item">
+                <label class="label"> Veggie or Vegan? </label>
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="veggie">
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="vegan">
+                    No
+                    </label>
+                  </div>
+            </div>  
+            <button class = "button" type = "submit" id = "button">Load List</button>
+            </form>
+          </div>
+          <div class = "page_item">
+            Restaurant List
+            <br/><br/>
+            <ul id="resto-list"></ul>
+          </div> 
+          <div class = "page_item">
+            <div id="map"></div>
+          </div>
+      </div>  
+    </div>
+  </div>
+    <script src ="./script.js"></script>
+</body>
+</html>
+
+
+              
+            
+
+            
+ 
